@@ -42,5 +42,5 @@ for (y = 0; y < gridSize; y++) {
   board += '\n';
 }
 
-//console.log('this is \n new line');
+//4onsole.log('this is \n new line');
 console.log(board);
