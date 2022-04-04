@@ -1,15 +1,13 @@
-//String properties and methods
+// Template literals - ES6+
+// Interpolation ${} - insert expression(value)
 
-let text = ' Peter Jorda';
+const name = 'john';
+const age = 25;
+const sentence = "Hey it 's " + name + ' and he is ' + age;
 
-let result = text.length;
+const value = `hey it 's ${name} and he is ${age}. and here is some math ${
+  4 + 4
+}`;
 
-console.log(result);
-console.log(text.length);
-console.log(text.toLowerCase());
-console.log(text.toUpperCase());
-console.log(text.charAt(0));
-console.log(text.charAt(text.length - 1));
-console.log(text.indexOf('O'));
-console.log(text);
-console.log(text.trim());
+console.log(value);
+console.log(sentence);
