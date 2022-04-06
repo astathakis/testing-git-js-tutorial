@@ -1,30 +1,21 @@
-//chess board variant with functions
-const squaresPerRow = 4;
-numOfRows = 4;
-let xString = '';
-let yString = '';
+const people = [
+  { name: 'bob', age: 20, position: 'developer', id: 1, salary: 200 },
+  { name: 'peter', age: 25, position: 'designer', id: 2, salary: 300 },
+  { name: 'susy', age: 30, position: 'the boss', id: 3, salary: 500 },
+  { name: 'anna', age: 35, position: 'the boss', id: 4, salary: 500 },
+];
 
-function drawDark() {
-  for (i = 0; i < squaresPerRow; i++) {
-    xString += '# ';
-  }
-  console.log(xString);
-  //console.log('\n');
-  xString = '';
-}
-function drawLight() {
-  for (i = 0; i < squaresPerRow; i++) {
-    yString += ' #';
-  }
-  //console.log('\n');
-  console.log(yString);
-  yString = '';
-}
+const total = people.reduce(function (acc, currItem) {
+  console.log(`total ${acc}`);
+  console.log(`current money: ${currItem.salary}`);
+  acc += currItem.salary;
+  return acc;
+}, 0);
 
-for (n = 0; n < numOfRows; n++) {
-  drawLight();
-  drawDark();
-}
+console.log(total);
 
-// drawDark();
-// drawLight();
+const array1 = [1, 2, 3, 4];
+
+const sum = array1.reduce((acc, curr) => acc + curr, 0);
+
+console.log(sum);
